@@ -104,7 +104,7 @@ Record a 45–60 second screen recording showing:
 File name: Lab02_<ITNo>.mp4
 
 
-Commit and push the video file to your GitHub Classroom repository.
+Commit and push the project files with video file to your GitHub Classroom repository.
 
 ---
 
