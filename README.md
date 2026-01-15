@@ -29,7 +29,7 @@ By the end of this lab, you will be able to:
 - Unity Hub  
 - Unity 2022.3 LTS  
 - Windows PC  
-- VR Headset (optional but recommended)
+- VR Headset
 
 ---
 
