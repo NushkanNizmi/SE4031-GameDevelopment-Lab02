@@ -1,122 +1,251 @@
-# Lab 02 – Main Project Setup (VR Core Template) + Locomotion + Folders
+# 🧪 Lab 02 – Main VR Project Setup (VR Core Template) + Locomotion + Folder Structure
 
-Unity Version: 2022.3 LTS  
-Lab Duration: 2 Hours  
-This project continues until Lab 09.
+Duration: 2 Hours  
+Project Type: Main continuous project (used from Lab 02 to Lab 09)
 
 ---
 
 ## Objective
 
-To create the main VR project using Unity’s VR Core Template, set up the correct project folder structure, save the main scene, and configure locomotion (teleport + smooth movement) inside a simple test room.
+Create the main VR project using the Unity **VR Core Template**, organize the project using a proper folder structure, and configure locomotion (teleportation and smooth movement).
 
 ---
 
 ## Learning Outcomes
 
-After completing this lab, students will be able to:
+By the end of this lab, you will be able to:
 
 - Create a VR project using the VR Core Template
-- Create the required folder structure for all labs
-- Save the main scene correctly in the Scenes folder
-- Identify key VR rig components (camera, controllers)
-- Build a simple test room (floor + walls)
-- Configure teleport locomotion using Teleportation Area
-- Enable smooth locomotion using Continuous Move Provider (Action-based)
-- Produce a short demonstration video for submission
+- Organize assets using a professional folder structure
+- Identify and understand the XR player rig
+- Create a simple test room
+- Enable teleport locomotion
+- Enable smooth locomotion
 
 ---
 
-## Step-by-Step Instructions
+## Software Requirements
 
-### 1) Create Project (VR Core)
-Unity Hub → New Project  
-Template: **VR Core**  
-Project Name: VR_PartA_<ITNo>
-
-
----
-
-### 2) Create Folder Structure (Must Match)
-Inside `Assets`, create folder: _Project
-
-Inside `Assets/_Project`, create:
-
-- Scenes
-- Scripts
-- Prefabs
-- Materials
-- Audio
-- UI
+- Unity Hub  
+- Unity 2022.3 LTS  
+- Windows PC  
+- VR Headset (optional but recommended)
 
 ---
 
-### 3) Save Main Scene
-File → Save As  
-Save to: Assets/_Project/Scenes/ 
+## Project Name
 
-Name: << Name Your Scene >> Eg : Main.unity
+VR_PartA_<YourITNumber>
 
+Example:
 
----
-
-### 4) Understand Player Rig (Do NOT Delete)
-In Hierarchy, locate the VR rig (XR Origin / Player).  
-Expand and confirm:
-
-- Main Camera
-- Left Hand
-- Right Hand
+VR_PartA_IT21012345
 
 ---
 
-### 5) Create a Simple Test Room
-Create floor:
-3D Object → Plane → rename `Floor`
+## Step 1 – Create VR Core Project
 
-Create walls:
-3D Object → Cube → scale and position 4 walls around the floor.
+1. Open Unity Hub  
+2. Click New Project  
+3. Select template: VR Core  
+4. Set project name:
 
----
+VR_PartA_<YourITNumber>
 
-### 6) Verify Teleport
-Select `Floor`  
-Add Component → `Teleportation Area` (if missing)  
-Press Play and verify teleport works.
+5. Click Create  
 
----
-
-### 7) Enable Smooth Movement (If Supported)
-Select XR Origin / Player  
-Add Component → `Continuous Move Provider (Action-based)`  
-Set Move Speed = 1.5
+Wait until Unity finishes loading.
 
 ---
 
-## Submission Task (Video)
+## Step 2 – Create Folder Structure (Must Match Exactly)
 
-Record a 45–60 second screen recording showing:
+In the Project window:
 
-- Teleport or smooth movement working
-- Your test room
-- Main scene saved in the correct folder
+1. Create folder:
 
-File name: Lab02_<ITNo>.mp4
+Assets/_Project
 
+2. Inside `_Project`, create the following folders:
 
-Commit and push the project files with video file to your GitHub Classroom repository.
+- Scenes  
+- Scripts  
+- Prefabs  
+- Materials  
+- Audio  
+- UI  
+
+Final structure should look like:
+
+Assets  
+└── _Project  
+  ├── Scenes  
+  ├── Scripts  
+  ├── Prefabs  
+  ├── Materials  
+  ├── Audio  
+  └── UI  
+
+---
+
+## Step 3 – Save Main Scene
+
+1. Go to File → Save As  
+2. Save location:
+
+Assets/_Project/Scenes/
+
+3. File name:
+
+Main.unity
+
+---
+
+## Step 4 – Understand Player Rig (DO NOT DELETE)
+
+In the Hierarchy window, locate the VR rig object. It may be named:
+
+- XR Origin  
+- XROrigin  
+- Player  
+
+Expand it and locate:
+
+- Camera  
+- Left Hand Controller  
+- Right Hand Controller  
+
+Do NOT delete or rename these objects.
+
+---
+
+## Step 5 – Create a Simple Test Room
+
+### Create Floor
+
+1. Hierarchy → Right Click → 3D Object → Plane  
+2. Rename:
+
+Floor
+
+---
+
+### Create Walls
+
+1. Hierarchy → Right Click → 3D Object → Cube  
+2. Duplicate to create 4 cubes  
+3. Scale and position them to form four walls around the floor
+
+---
+
+## Step 6 – Verify Teleportation
+
+1. Select the Floor object  
+2. Inspector → Add Component → Teleportation Area (if not already added)  
+3. Enter Play Mode  
+4. If headset is connected, confirm teleportation works  
+
+---
+
+## Step 7 – Enable Smooth Movement
+
+If the template supports smooth movement:
+
+1. Select XR Origin / Player object  
+2. Inspector → Add Component  
+3. Search:
+
+Continuous Move Provider (Action-based)
+
+4. Set:
+
+Move Speed = 1.5
+
+---
+
+## Submission Task
+
+Record a 45–60 second demo video showing:
+
+- Teleportation or smooth movement  
+- Your test room (floor + walls)  
+- Player movement inside the room  
+
+Video filename format:
+
+Lab02_<YourITNumber>.mp4
+
+Example:
+
+Lab02_IT21012345.mp4
+
+---
+
+## Submission Requirements
+
+Each student must submit BOTH of the following items.
+
+---
+
+### 1) Unity Project Folder (NOT zipped)
+
+Folder name format:
+
+Lab02_Project_<YourITNumber>
+
+Example:
+
+Lab02_Project_IT21012345
+
+Requirements:
+
+- Upload the entire Unity project folder
+- Do NOT zip or compress
+- Must include:
+  - Assets/
+  - Packages/
+  - ProjectSettings/
+
+Do NOT include:
+
+- Library/
+- Temp/
+- Logs/
+- Build/
+
+---
+
+### 2) Demo Video (30–90 seconds)
+
+Filename format:
+
+Lab02_<YourITNumber>.mp4
+
+Example:
+
+Lab02_IT21012345.mp4
+
+The video must clearly show:
+
+- The project running
+- Implemented locomotion features
+- Scene interaction
+
+---
+
+### Important Notes
+
+- Both project folder and video are mandatory  
+- Incorrect naming = marks deduction  
+- Missing files = lab considered incomplete  
+- Late submissions follow course policy  
 
 ---
 
 ## Next Lab
 
-Lab 03: Environment setup with materials and lighting (VR safe design)
+Lab 03 – Environment Building + Materials + Lighting (VR safe design)
+
+This project will continue until Lab 09.
 
 ---
-
-Lab sheet created by **Nushkan Nismi**.
-
-
-
-
-
